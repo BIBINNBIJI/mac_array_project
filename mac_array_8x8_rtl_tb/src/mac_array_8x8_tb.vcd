@@ -1,0 +1,139 @@
+$date
+	Mon May 12 14:25:10 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mac_array_8x8_tb $end
+$var wire 16 ! mac_out7 [15:0] $end
+$var wire 16 " mac_out6 [15:0] $end
+$var wire 16 # mac_out5 [15:0] $end
+$var wire 16 $ mac_out4 [15:0] $end
+$var wire 16 % mac_out3 [15:0] $end
+$var wire 16 & mac_out2 [15:0] $end
+$var wire 16 ' mac_out1 [15:0] $end
+$var wire 16 ( mac_out0 [15:0] $end
+$var reg 1 ) clk $end
+$var reg 1 * rst $end
+$scope module uut $end
+$var wire 8 + a0 [7:0] $end
+$var wire 8 , a1 [7:0] $end
+$var wire 8 - a2 [7:0] $end
+$var wire 8 . a3 [7:0] $end
+$var wire 8 / a4 [7:0] $end
+$var wire 8 0 a5 [7:0] $end
+$var wire 8 1 a6 [7:0] $end
+$var wire 8 2 a7 [7:0] $end
+$var wire 8 3 b0 [7:0] $end
+$var wire 8 4 b1 [7:0] $end
+$var wire 8 5 b2 [7:0] $end
+$var wire 8 6 b3 [7:0] $end
+$var wire 8 7 b4 [7:0] $end
+$var wire 8 8 b5 [7:0] $end
+$var wire 8 9 b6 [7:0] $end
+$var wire 8 : b7 [7:0] $end
+$var wire 1 ) clk $end
+$var wire 1 * rst $end
+$var reg 16 ; mac_out0 [15:0] $end
+$var reg 16 < mac_out1 [15:0] $end
+$var reg 16 = mac_out2 [15:0] $end
+$var reg 16 > mac_out3 [15:0] $end
+$var reg 16 ? mac_out4 [15:0] $end
+$var reg 16 @ mac_out5 [15:0] $end
+$var reg 16 A mac_out6 [15:0] $end
+$var reg 16 B mac_out7 [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+1*
+0)
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#5000
+1)
+#10000
+0)
+b1010 :
+b1010000 2
+b1001 9
+b1000110 1
+b1000 8
+b111100 0
+b111 7
+b110010 /
+b110 6
+b101000 .
+b101 5
+b11110 -
+b100 4
+b10100 ,
+b11 3
+b1010 +
+0*
+#15000
+b1100100000 !
+b1100100000 B
+b1001110110 "
+b1001110110 A
+b111100000 #
+b111100000 @
+b101011110 $
+b101011110 ?
+b11110000 %
+b11110000 >
+b10010110 &
+b10010110 =
+b1010000 '
+b1010000 <
+b11110 (
+b11110 ;
+1)
+#20000
+0)
+#25000
+1)
+#30000
+0)
+#35000
+1)
+#40000
+0)
