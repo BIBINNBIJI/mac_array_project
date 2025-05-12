@@ -7,14 +7,14 @@ This project implements a parameterized N×N Multiply-Accumulate (MAC) array usi
 ```
 mac_array_project/
 ├── src/
-│   ├── mac_unit.v          # 1x1 MAC unit module
-│   └── mac_array.v         # N×N MAC array using generate block
-├── tb/
-│   └── mac_array_tb.v      # Testbench for simulation
-├── sim/
-│   └── mac_array.vcd       # VCD output for waveform analysis
+│   |___mac 8 cross 8 tb Simulation.png     #   terminal scripts
+│   └── mac_array_8x8.v        # 8x8 MAC array using generate block
+|   |____mac 8 cross 8 tb vcd.png     # result waveform 
+│   └── mac_array_8x8_tb.v      # Testbench for simulation
+|   |____SM in GH100.png  # SM in GH100
+│   └── mac_array_8x8_tb.vcd       # VCD output for waveform analysis
 ├── README.md
-└── LICENSE
+|___License
 ```
 
 ## 🚀 Features
