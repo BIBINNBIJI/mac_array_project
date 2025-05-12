@@ -114,5 +114,5 @@ This project is licensed under the MIT License. See `LICENSE` for more informati
 
 ## 📧 Contact
 
-For collaboration, support, or business inquiries: **yarok14@protonmail.com**
+For collaboration, support, or business inquiries: **contacts.yarok14@gmail.com**
 
