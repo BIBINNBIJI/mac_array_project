@@ -1,4 +1,4 @@
-# 🔢 N×N MAC (Multiply-Accumulate) Array in Verilog
+# 🔢 8×8 MAC (Multiply-Accumulate) Array in Verilog
 
 This project implements a parameterized N×N Multiply-Accumulate (MAC) array using Verilog RTL. It is optimized for AI/ML inference, signal processing, and embedded applications where efficient computation is crucial.
 
@@ -120,7 +120,7 @@ gtkwave mac_array_8x8_tb.vcd
 
 ## 📜 License
 
-This project is licensed under the MIT License. See `LICENSE` for more information.
+This project is licensed under the MIT License. See `![Simulation Screenshot](License)` for more information.
 
 ## 🙌 Acknowledgments
 
