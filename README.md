@@ -118,7 +118,7 @@ gtkwave mac_array_8x8_tb.vcd
 - Edge AI and IoT devices
 - Matrix multiplication hardware blocks
 
-- ![SM in GH100](mac_array_8x8_rtl_tb/SM%20in%20GH100.png)
+- ![SM_in_GH100_GPU](mac_array_8x8_rtl_tb/SM%20in%20GH100.png)
 
 ## 📜 License
 
