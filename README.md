@@ -1,4 +1,3 @@
-
 # 🔢 N×N MAC (Multiply-Accumulate) Array in Verilog
 
 This project implements a parameterized N×N Multiply-Accumulate (MAC) array using Verilog RTL. It is optimized for AI/ML inference, signal processing, and embedded applications where efficient computation is crucial.
@@ -81,13 +80,35 @@ endgenerate
 endmodule
 ```
 
-## 🧪 Simulation
+## 🧪 Simulation and Waveform Analysis
 
-1. Compile and simulate using a tool like ModelSim, Icarus Verilog, or Vivado.
-2. View waveforms via `.vcd` file:
-   ```verilog
-   $dumpfile("mac_array.vcd");
-   $dumpvars(0, mac_array_tb);
+### Step-by-step:
+
+```bash
+# Compile the design and testbench
+iverilog -o mac_array_8x8_tb.out mac_array_8x8_tb.v mac_array_8x8.v
+
+# Run the simulation
+vvp mac_array_8x8_tb.out
+
+# Open waveform viewer (GTKWave)
+gtkwave mac_array_8x8_tb.vcd
+```
+
+### Output Screenshot
+
+![Simulation Screenshot](mac_array_8x8_simulation.png)
+
+## 🛠️ Installing Icarus Verilog and GTKWave (Windows)
+
+1. Download **Icarus Verilog** from:
+   [http://iverilog.icarus.com/](http://iverilog.icarus.com/)
+2. Download **GTKWave** from:
+   [http://gtkwave.sourceforge.net/](http://gtkwave.sourceforge.net/)
+3. Add the installation paths to your system `PATH` environment variable. Example:
+   ```
+   C:\iverilog\bin
+   C:\gtkwave\bin
    ```
 
 ## 📦 Use Cases
@@ -96,10 +117,6 @@ endmodule
 - Digital Signal Processing (DSP)
 - Edge AI and IoT devices
 - Matrix multiplication hardware blocks
-
-## 🧠 Insights
-
-This RTL implementation can be expanded into systolic arrays, integrated into AI SoCs, or optimized for custom ASIC nodes. Efficient layout and clock gating techniques can further reduce power and area.
 
 ## 📜 License
 
@@ -115,4 +132,5 @@ This project is licensed under the MIT License. See `LICENSE` for more informati
 ## 📧 Contact
 
 For collaboration, support, or business inquiries: **contacts.yarok14@gmail.com**
+
 
