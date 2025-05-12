@@ -97,7 +97,7 @@ gtkwave mac_array_8x8_tb.vcd
 
 ### Output Screenshot
 
-mac_array_8x8_rtl_tb/mac 8 cross 8 tb Simulation.png
+!mac_array_8x8_rtl_tb/mac 8 cross 8 tb Simulation.png
 
 ## 🛠️ Installing Icarus Verilog and GTKWave (Windows)
 
