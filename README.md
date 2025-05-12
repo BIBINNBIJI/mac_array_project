@@ -102,7 +102,7 @@ gtkwave mac_array_8x8_tb.vcd
 ## 🛠️ Installing Icarus Verilog and GTKWave (Windows)
 
 1. Download **Icarus Verilog** from:
-   [http://iverilog.icarus.com/](http://iverilog.icarus.com/)
+   [http://iverilog.icarus.com/](https://bleyer.org/icarus/)
 2. Download **GTKWave** from:
    [http://gtkwave.sourceforge.net/](http://gtkwave.sourceforge.net/)
 3. Add the installation paths to your system `PATH` environment variable. Example:
