@@ -120,7 +120,7 @@ gtkwave mac_array_8x8_tb.vcd
 
 ## 📜 License
 
-This project is licensed under the MIT License. See `!(License)` for more information.
+This project is licensed under the MIT License. See License for more information.
 
 ## 🙌 Acknowledgments
 
