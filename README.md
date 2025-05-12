@@ -118,6 +118,8 @@ gtkwave mac_array_8x8_tb.vcd
 - Edge AI and IoT devices
 - Matrix multiplication hardware blocks
 
+- ![SM in GH100](mac_array_8x8_rtl_tb/SM%20in%20GH100.png)
+
 ## 📜 License
 
 This project is licensed under the MIT License. See License for more information.
