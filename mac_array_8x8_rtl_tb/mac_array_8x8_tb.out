@@ -1,0 +1,287 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_00000285d757d060 .scope module, "mac_array_8x8_tb" "mac_array_8x8_tb" 2 3;
+ .timescale -9 -12;
+L_00000285d758a1d0 .functor BUFZ 16, v00000285d75df9f0_0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+L_00000285d7589de0 .functor BUFZ 16, v00000285d75dfe50_0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+L_00000285d7589bb0 .functor BUFZ 16, v00000285d75df630_0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+L_00000285d758a240 .functor BUFZ 16, v00000285d75df8b0_0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+L_00000285d758a320 .functor BUFZ 16, v00000285d75df590_0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+L_00000285d758a780 .functor BUFZ 16, v00000285d75df6d0_0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+L_00000285d758a010 .functor BUFZ 16, v00000285d75dfc70_0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+L_00000285d7589f30 .functor BUFZ 16, v00000285d75dfdb0_0, C4<0000000000000000>, C4<0000000000000000>, C4<0000000000000000>;
+v00000285d75df810 .array "a", 0 7, 7 0;
+v00000285d75dfa90 .array "b", 0 7, 7 0;
+v00000285d75df270_0 .var "clk", 0 0;
+v00000285d75dff90 .array "mac_out", 0 7;
+v00000285d75dff90_0 .net v00000285d75dff90 0, 15 0, L_00000285d758a1d0; 1 drivers
+v00000285d75dff90_1 .net v00000285d75dff90 1, 15 0, L_00000285d7589de0; 1 drivers
+v00000285d75dff90_2 .net v00000285d75dff90 2, 15 0, L_00000285d7589bb0; 1 drivers
+v00000285d75dff90_3 .net v00000285d75dff90 3, 15 0, L_00000285d758a240; 1 drivers
+v00000285d75dff90_4 .net v00000285d75dff90 4, 15 0, L_00000285d758a320; 1 drivers
+v00000285d75dff90_5 .net v00000285d75dff90 5, 15 0, L_00000285d758a780; 1 drivers
+v00000285d75dff90_6 .net v00000285d75dff90 6, 15 0, L_00000285d758a010; 1 drivers
+v00000285d75dff90_7 .net v00000285d75dff90 7, 15 0, L_00000285d7589f30; 1 drivers
+v00000285d75dfbd0_0 .net "mac_out0", 15 0, v00000285d75df9f0_0;  1 drivers
+v00000285d75df450_0 .net "mac_out1", 15 0, v00000285d75dfe50_0;  1 drivers
+v00000285d75dfb30_0 .net "mac_out2", 15 0, v00000285d75df630_0;  1 drivers
+v00000285d75df3b0_0 .net "mac_out3", 15 0, v00000285d75df8b0_0;  1 drivers
+v00000285d75df770_0 .net "mac_out4", 15 0, v00000285d75df590_0;  1 drivers
+v00000285d75dfef0_0 .net "mac_out5", 15 0, v00000285d75df6d0_0;  1 drivers
+v00000285d75dfd10_0 .net "mac_out6", 15 0, v00000285d75dfc70_0;  1 drivers
+v00000285d75df090_0 .net "mac_out7", 15 0, v00000285d75dfdb0_0;  1 drivers
+v00000285d75df130_0 .var "rst", 0 0;
+S_00000285d757d1f0 .scope module, "uut" "mac_array_8x8" 2 13, 3 3 0, S_00000285d757d060;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "rst";
+    .port_info 2 /INPUT 8 "a0";
+    .port_info 3 /INPUT 8 "a1";
+    .port_info 4 /INPUT 8 "a2";
+    .port_info 5 /INPUT 8 "a3";
+    .port_info 6 /INPUT 8 "a4";
+    .port_info 7 /INPUT 8 "a5";
+    .port_info 8 /INPUT 8 "a6";
+    .port_info 9 /INPUT 8 "a7";
+    .port_info 10 /INPUT 8 "b0";
+    .port_info 11 /INPUT 8 "b1";
+    .port_info 12 /INPUT 8 "b2";
+    .port_info 13 /INPUT 8 "b3";
+    .port_info 14 /INPUT 8 "b4";
+    .port_info 15 /INPUT 8 "b5";
+    .port_info 16 /INPUT 8 "b6";
+    .port_info 17 /INPUT 8 "b7";
+    .port_info 18 /OUTPUT 16 "mac_out0";
+    .port_info 19 /OUTPUT 16 "mac_out1";
+    .port_info 20 /OUTPUT 16 "mac_out2";
+    .port_info 21 /OUTPUT 16 "mac_out3";
+    .port_info 22 /OUTPUT 16 "mac_out4";
+    .port_info 23 /OUTPUT 16 "mac_out5";
+    .port_info 24 /OUTPUT 16 "mac_out6";
+    .port_info 25 /OUTPUT 16 "mac_out7";
+v00000285d75df810_0 .array/port v00000285d75df810, 0;
+v00000285d75433f0_0 .net "a0", 7 0, v00000285d75df810_0;  1 drivers
+v00000285d75df810_1 .array/port v00000285d75df810, 1;
+v00000285d7575480_0 .net "a1", 7 0, v00000285d75df810_1;  1 drivers
+v00000285d75df810_2 .array/port v00000285d75df810, 2;
+v00000285d757d380_0 .net "a2", 7 0, v00000285d75df810_2;  1 drivers
+v00000285d75df810_3 .array/port v00000285d75df810, 3;
+v00000285d757d420_0 .net "a3", 7 0, v00000285d75df810_3;  1 drivers
+v00000285d75df810_4 .array/port v00000285d75df810, 4;
+v00000285d7572c60_0 .net "a4", 7 0, v00000285d75df810_4;  1 drivers
+v00000285d75df810_5 .array/port v00000285d75df810, 5;
+v00000285d7572d00_0 .net "a5", 7 0, v00000285d75df810_5;  1 drivers
+v00000285d75df810_6 .array/port v00000285d75df810, 6;
+v00000285d75ded20_0 .net "a6", 7 0, v00000285d75df810_6;  1 drivers
+v00000285d75df810_7 .array/port v00000285d75df810, 7;
+v00000285d75dedc0_0 .net "a7", 7 0, v00000285d75df810_7;  1 drivers
+v00000285d75dfa90_0 .array/port v00000285d75dfa90, 0;
+v00000285d75dee60_0 .net "b0", 7 0, v00000285d75dfa90_0;  1 drivers
+v00000285d75dfa90_1 .array/port v00000285d75dfa90, 1;
+v00000285d75def00_0 .net "b1", 7 0, v00000285d75dfa90_1;  1 drivers
+v00000285d75dfa90_2 .array/port v00000285d75dfa90, 2;
+v00000285d75426a0_0 .net "b2", 7 0, v00000285d75dfa90_2;  1 drivers
+v00000285d75dfa90_3 .array/port v00000285d75dfa90, 3;
+v00000285d7542740_0 .net "b3", 7 0, v00000285d75dfa90_3;  1 drivers
+v00000285d75dfa90_4 .array/port v00000285d75dfa90, 4;
+v00000285d75427e0_0 .net "b4", 7 0, v00000285d75dfa90_4;  1 drivers
+v00000285d75dfa90_5 .array/port v00000285d75dfa90, 5;
+v00000285d7542880_0 .net "b5", 7 0, v00000285d75dfa90_5;  1 drivers
+v00000285d75dfa90_6 .array/port v00000285d75dfa90, 6;
+v00000285d75defa0_0 .net "b6", 7 0, v00000285d75dfa90_6;  1 drivers
+v00000285d75dfa90_7 .array/port v00000285d75dfa90, 7;
+v00000285d75df4f0_0 .net "b7", 7 0, v00000285d75dfa90_7;  1 drivers
+v00000285d75df310_0 .net "clk", 0 0, v00000285d75df270_0;  1 drivers
+v00000285d75df9f0_0 .var "mac_out0", 15 0;
+v00000285d75dfe50_0 .var "mac_out1", 15 0;
+v00000285d75df630_0 .var "mac_out2", 15 0;
+v00000285d75df8b0_0 .var "mac_out3", 15 0;
+v00000285d75df590_0 .var "mac_out4", 15 0;
+v00000285d75df6d0_0 .var "mac_out5", 15 0;
+v00000285d75dfc70_0 .var "mac_out6", 15 0;
+v00000285d75dfdb0_0 .var "mac_out7", 15 0;
+v00000285d75df950_0 .net "rst", 0 0, v00000285d75df130_0;  1 drivers
+E_00000285d7574590 .event posedge, v00000285d75df950_0, v00000285d75df310_0;
+    .scope S_00000285d757d1f0;
+T_0 ;
+    %wait E_00000285d7574590;
+    %load/vec4 v00000285d75df950_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 16;
+    %assign/vec4 v00000285d75df9f0_0, 0;
+    %pushi/vec4 0, 0, 16;
+    %assign/vec4 v00000285d75dfe50_0, 0;
+    %pushi/vec4 0, 0, 16;
+    %assign/vec4 v00000285d75df630_0, 0;
+    %pushi/vec4 0, 0, 16;
+    %assign/vec4 v00000285d75df8b0_0, 0;
+    %pushi/vec4 0, 0, 16;
+    %assign/vec4 v00000285d75df590_0, 0;
+    %pushi/vec4 0, 0, 16;
+    %assign/vec4 v00000285d75df6d0_0, 0;
+    %pushi/vec4 0, 0, 16;
+    %assign/vec4 v00000285d75dfc70_0, 0;
+    %pushi/vec4 0, 0, 16;
+    %assign/vec4 v00000285d75dfdb0_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v00000285d75433f0_0;
+    %pad/u 16;
+    %load/vec4 v00000285d75dee60_0;
+    %pad/u 16;
+    %mul;
+    %assign/vec4 v00000285d75df9f0_0, 0;
+    %load/vec4 v00000285d7575480_0;
+    %pad/u 16;
+    %load/vec4 v00000285d75def00_0;
+    %pad/u 16;
+    %mul;
+    %assign/vec4 v00000285d75dfe50_0, 0;
+    %load/vec4 v00000285d757d380_0;
+    %pad/u 16;
+    %load/vec4 v00000285d75426a0_0;
+    %pad/u 16;
+    %mul;
+    %assign/vec4 v00000285d75df630_0, 0;
+    %load/vec4 v00000285d757d420_0;
+    %pad/u 16;
+    %load/vec4 v00000285d7542740_0;
+    %pad/u 16;
+    %mul;
+    %assign/vec4 v00000285d75df8b0_0, 0;
+    %load/vec4 v00000285d7572c60_0;
+    %pad/u 16;
+    %load/vec4 v00000285d75427e0_0;
+    %pad/u 16;
+    %mul;
+    %assign/vec4 v00000285d75df590_0, 0;
+    %load/vec4 v00000285d7572d00_0;
+    %pad/u 16;
+    %load/vec4 v00000285d7542880_0;
+    %pad/u 16;
+    %mul;
+    %assign/vec4 v00000285d75df6d0_0, 0;
+    %load/vec4 v00000285d75ded20_0;
+    %pad/u 16;
+    %load/vec4 v00000285d75defa0_0;
+    %pad/u 16;
+    %mul;
+    %assign/vec4 v00000285d75dfc70_0, 0;
+    %load/vec4 v00000285d75dedc0_0;
+    %pad/u 16;
+    %load/vec4 v00000285d75df4f0_0;
+    %pad/u 16;
+    %mul;
+    %assign/vec4 v00000285d75dfdb0_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_00000285d757d060;
+T_1 ;
+    %vpi_call 2 33 "$dumpfile", "mac_array_8x8_tb.vcd" {0 0 0};
+    %vpi_call 2 34 "$dumpvars", 32'sb00000000000000000000000000000000, S_00000285d757d060 {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_00000285d757d060;
+T_2 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000285d75df270_0, 0, 1;
+T_2.0 ;
+    %delay 5000, 0;
+    %load/vec4 v00000285d75df270_0;
+    %inv;
+    %store/vec4 v00000285d75df270_0, 0, 1;
+    %jmp T_2.0;
+    %end;
+    .thread T_2;
+    .scope S_00000285d757d060;
+T_3 ;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000285d75df130_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000285d75df130_0, 0, 1;
+    %pushi/vec4 10, 0, 8;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75df810, 4, 0;
+    %pushi/vec4 3, 0, 8;
+    %ix/load 4, 0, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75dfa90, 4, 0;
+    %pushi/vec4 20, 0, 8;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75df810, 4, 0;
+    %pushi/vec4 4, 0, 8;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75dfa90, 4, 0;
+    %pushi/vec4 30, 0, 8;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75df810, 4, 0;
+    %pushi/vec4 5, 0, 8;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75dfa90, 4, 0;
+    %pushi/vec4 40, 0, 8;
+    %ix/load 4, 3, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75df810, 4, 0;
+    %pushi/vec4 6, 0, 8;
+    %ix/load 4, 3, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75dfa90, 4, 0;
+    %pushi/vec4 50, 0, 8;
+    %ix/load 4, 4, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75df810, 4, 0;
+    %pushi/vec4 7, 0, 8;
+    %ix/load 4, 4, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75dfa90, 4, 0;
+    %pushi/vec4 60, 0, 8;
+    %ix/load 4, 5, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75df810, 4, 0;
+    %pushi/vec4 8, 0, 8;
+    %ix/load 4, 5, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75dfa90, 4, 0;
+    %pushi/vec4 70, 0, 8;
+    %ix/load 4, 6, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75df810, 4, 0;
+    %pushi/vec4 9, 0, 8;
+    %ix/load 4, 6, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75dfa90, 4, 0;
+    %pushi/vec4 80, 0, 8;
+    %ix/load 4, 7, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75df810, 4, 0;
+    %pushi/vec4 10, 0, 8;
+    %ix/load 4, 7, 0;
+    %flag_set/imm 4, 0;
+    %store/vec4a v00000285d75dfa90, 4, 0;
+    %delay 20000, 0;
+    %vpi_call 2 57 "$display", "MAC Output: %d %d %d %d %d %d %d %d", v00000285d75dff90_0, v00000285d75dff90_1, v00000285d75dff90_2, v00000285d75dff90_3, v00000285d75dff90_4, v00000285d75dff90_5, v00000285d75dff90_6, v00000285d75dff90_7 {0 0 0};
+    %delay 10000, 0;
+    %vpi_call 2 58 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "mac_array_8x8_tb.v";
+    "mac_array_8x8.v";
